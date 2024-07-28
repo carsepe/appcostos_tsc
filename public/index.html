@@ -1,35 +1,41 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Costos (TypeScript)</title>
+    <title>Costos Mensuales</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>App Costos (TypeScript)</header>
-    
-    <main>
-        <section id="display">
+    <header>Vida MRR</header>
 
-        </section>
+    <main>
+        
+        <section id="display"></section>
 
         <section id="editor">
-            <div id="input-container"></div>
-            <input type="text" id="title">
-            <input type="number" id="cost">
-            <select name = "" id="cost">
-                <option value="COP"></option>
-                <option value="USD"></option>
-                <option value="MXN"></option>
-            </select>
+            <div id="input-container">
+                <input type="text" id="title" placeholder="Insertar titulo...">
+                <input type="number" id="cost" placeholder="Precio 45.56...">
+                <select name="" id="currency">
+                    <option value="COP">COP</option>
+                    <option value="USD">USD</option>
+                    <option value="MXN">MXN</option>
+                </select>    
+                
+            </div>
+            <button id="bAdd">Añadir</button>
+            
+
+            
         </section>
 
         <section id="items">
 
         </section>
-
     </main>
+
     <script src="js/expenses.js"></script>
-    <script src="index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
